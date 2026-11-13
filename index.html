@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff7f5">
+<title>For You, Princess ♡</title>
+<style>
+:root{--rose:#bd7885;--deep:#80505b;--ink:#58464a;--cream:#fffaf7;--blush:#f7e7e6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:30px 22px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 15%,#f6dfe2,transparent 32%),radial-gradient(circle at 85% 85%,#f2e4d9,transparent 36%),#fffaf7}
+.hero:before,.hero:after{content:"✿";position:absolute;color:#d8a2aa55;font-size:105px}.hero:before{top:5%;left:5%;transform:rotate(-20deg)}.hero:after{bottom:4%;right:7%;transform:rotate(18deg)}
+.kicker,.eyebrow{font:10px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(43px,10vw,78px);font-weight:400;line-height:1.05;margin:20px 0;color:var(--deep)}
+.subtitle{font-style:italic;font-size:17px;color:#8d6b72}
+button,.pill{border:0;cursor:pointer;font:11px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase}
+.pill{display:inline-block;background:var(--deep);color:white;padding:15px 23px;border-radius:30px;margin-top:27px;text-decoration:none}
+section{max-width:800px;margin:auto;padding:76px 24px;text-align:center}
+h2{font-size:clamp(31px,7vw,45px);font-weight:400;color:var(--deep);margin:12px 0 20px}
+p{font-size:16px;line-height:1.9}
+.envelope{width:min(290px,82vw);height:180px;margin:30px auto 16px;background:#e8b9bf;border-radius:8px;display:grid;place-items:center;position:relative;cursor:pointer;box-shadow:0 15px 35px #80505b20}
+.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 49%,#d99da7 50%) left/50% 100% no-repeat,linear-gradient(215deg,transparent 49%,#d99da7 50%) right/50% 100% no-repeat}
+.envelope:after{content:"";position:absolute;top:0;left:0;right:0;margin:auto;width:0;height:0;border-left:145px solid transparent;border-right:145px solid transparent;border-top:95px solid #f0cbd0;transform-origin:top;transition:.5s}
+.envelope.open:after{transform:rotateX(180deg)}
+.seal{z-index:2;background:#fff8f3;color:var(--deep);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:23px}
+.note{font:11px Arial,sans-serif;color:#987b80}
+.letter{display:none;background:white;padding:28px 25px;border-radius:13px;box-shadow:0 12px 35px #80505b15;text-align:left;margin:25px auto;max-width:590px}
+.letter.show{display:block;animation:fade .7s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:30px auto}
+.memory{margin:0;background:white;padding:8px 8px 15px;border-radius:10px;box-shadow:0 8px 24px #80505b12}
+.memory img{width:100%;height:260px;object-fit:cover;border-radius:6px;display:block}
+.memory figcaption{font:12px Arial,sans-serif;color:#87666d;padding:12px 3px 0}
+.song{background:#fff;border:1px solid #f0d9dc;border-radius:18px;padding:24px;max-width:470px;margin:25px auto}
+.song .heart{font-size:26px;color:var(--rose)}
+.closing{background:var(--blush);max-width:none;padding:75px 24px}
+footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:2px;color:#a17c83}
+@media(max-width:520px){.gallery{gap:8px}.memory{padding:6px 6px 12px}.memory img{height:205px}}
+</style></head>
+<body>
+<header class="hero"><div>
+<div class="kicker">a little something for you</div>
+<h1>Happy Birthday,<br>Princess ♡</h1>
+<div class="subtitle">A little page, made with a lot of care.</div>
+<a class="pill" href="#letter-section">OPEN YOUR GIFT ↓</a>
+</div></header>
+
+<section id="letter-section">
+<div class="eyebrow">for your special day</div><h2>A letter for you</h2>
+<p>There's a little something I want you to read today.</p>
+<div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open letter" onclick="openLetter()"><div class="seal">♡</div></div>
+<div class="note">tap the envelope to open your letter</div>
+<article class="letter" id="letter">
+<p>Dear Princess,</p>
+<p>Happy birthday! I hope this new chapter brings you endless happiness, beautiful memories, and countless reasons to smile.</p>
+<p>Never stop growing, never stop dreaming, and never forget how special you are. May the days ahead be kinder, lighter, and full of little things that make your heart happy.</p>
+<p>Thank you for being you. I hope you enjoy your day and feel celebrated, today and always.</p>
+<p>With care,<br><strong>— Z</strong></p>
+</article></section>
+
+<section><div class="eyebrow">little moments</div><h2>Some memories ♡</h2>
+<p>A few moments I wanted to keep here.</p>
+<div class="gallery">
+<figure class="memory"><img src="flowers-and-you.jpg" alt="Salma among pink flowers"><figcaption>Surrounded by flowers, just like you deserve.</figcaption></figure>
+<figure class="memory"><img src="lilies.jpg" alt="Salma holding lilies"><figcaption>A little reminder of something beautiful.</figcaption></figure>
+<figure class="memory"><img src="our-food-date.jpg" alt="A meal together"><figcaption>Little moments, lovely memories.</figcaption></figure>
+<figure class="memory"><img src="pretty-day.jpg" alt="A smiling portrait"><figcaption>Keep that smile. It suits you.</figcaption></figure>
+</div></section>
+
+<section><div class="eyebrow">a song for you</div><h2>Press play ♡</h2>
+<div class="song"><div class="heart">♫</div><p><strong>Semua Aku Dirayakan</strong><br><span class="note">Nadin Amizah</span></p>
+<a class="pill" style="margin-top:8px" href="https://www.youtube.com/results?search_query=Nadin+Amizah+Semua+Aku+Dirayakan+official" target="_blank" rel="noopener">LISTEN TO THE SONG ↗</a>
+<p class="note">Opens YouTube so the song can play from its official upload.</p></div></section>
+
+<section class="closing"><div class="eyebrow">one last thing</div><h2>Keep shining.</h2>
+<p>I hope life surprises you with beautiful things, in ways you never expected. You deserve so much happiness.</p><div style="font-size:30px;color:#c78694;margin-top:20px">♡</div></section>
+<footer>MADE WITH CARE · JUST FOR YOU</footer>
+<script>
+function openLetter(){document.getElementById('envelope').classList.add('open');document.getElementById('letter').classList.add('show')}
+document.getElementById('envelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+</script></body></html>
