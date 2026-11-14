@@ -156,6 +156,33 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
   z-index: 3;
   }
   
+/* LITTLE SCRAPBOOK STICKERS */
+.scrapbook-card::after {
+  content: "✦";
+  position: absolute;
+  top: 12px;
+  right: -8px;
+  color: #e6a5b5;
+  font-size: 22px;
+  text-shadow: 0 2px 5px #e6a5b566;
+  transform: rotate(15deg);
+}
+
+.scrapbook-card:nth-child(2)::after {
+  content: "♡";
+  color: #e9a0b2;
+}
+
+.scrapbook-card:nth-child(3)::after {
+  content: "✿";
+  color: #d99ca8;
+}
+
+.scrapbook-card:nth-child(4)::after {
+  content: "♡";
+  color: #e9a0b2;
+    }
+  
 </style></head>
 <body>
 <div class="petals">
