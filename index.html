@@ -72,14 +72,65 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
     transform: translateY(-40px) rotate(0deg);
     opacity: 0;
   }
-  10% { opacity: 0.8; }
-  90% { opacity: 0.7; }
+  10% {
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(22px, 25vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-18px, 55vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(20px, 82vh) rotate(270deg);
+  }
+  90% {
+    opacity: 0.7;
+  }
   100% {
     transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
+    }
+
+  /* Dreamy scrapbook gallery */
+.scrapbook-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 16px;
+  padding: 18px 8px;
 }
 
+.scrapbook-card {
+  background: #fffafc;
+  padding: 10px 10px 18px;
+  border-radius: 5px;
+  box-shadow: 0 5px 16px rgba(150, 90, 120, 0.16);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.scrapbook-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.scrapbook-card:hover {
+  transform: rotate(0deg) scale(1.04);
+}
+
+.scrapbook-card img {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+.scrapbook-card figcaption {
+  color: #9b687e;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
 </style></head>
 <body>
 <div class="petals">
@@ -151,11 +202,11 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
   </article></section>
 <section><div class="eyebrow">little moments</div><h2>Some memories ♡</h2>
 <p>A few moments I wanted to keep here.</p>
-<div class="gallery">
-<figure class="memory"><img src="flowers-and-you.jpg" alt="Salma among pink flowers"><figcaption>Surrounded by flowers, just like you deserve.</figcaption></figure>
-<figure class="memory"><img src="lilies.jpg" alt="Salma holding lilies"><figcaption>A little reminder of something beautiful.</figcaption></figure>
-<figure class="memory"><img src="our-food-date.jpg" alt="A meal together"><figcaption>Little moments, lovely memories.</figcaption></figure>
-<figure class="memory"><img src="pretty-day.jpg" alt="A smiling portrait"><figcaption>Keep that smile. It suits you.</figcaption></figure>
+<div class="scrapbook-gallery">
+<figure class="scrapbook-card"><img src="flowers-and-you.jpg" alt="Salma among pink flowers"><figcaption>Surrounded by flowers, just like you deserve.</figcaption></figure>
+<figure class="scrapbook-card"><img src="lilies.jpg" alt="Salma holding lilies"><figcaption>A little reminder of something beautiful.</figcaption></figure>
+<figure class="scrapbook-card"><img src="our-food-date.jpg" alt="A meal together"><figcaption>Little moments, lovely memories.</figcaption></figure>
+<figure class="scrapbook-card"><img src="pretty-day.jpg" alt="A smiling portrait"><figcaption>Keep that smile. It suits you.</figcaption></figure>
 </div></section>
 
 
