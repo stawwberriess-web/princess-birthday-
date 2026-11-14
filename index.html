@@ -24,7 +24,20 @@ p{font-size:16px;line-height:1.9}
 .envelope.open:after{transform:rotateX(180deg)}
 .seal{z-index:2;background:#fff8f3;color:var(--deep);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:23px}
 .note{font:11px Arial,sans-serif;color:#987b80}
-.letter{display:none;background:white;padding:28px 25px;border-radius:13px;box-shadow:0 12px 35px #80505b15;text-align:left;margin:25px auto;max-width:590px}
+.letter{
+  display:none;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(145deg,#fffaf8,#fff0f5,#fffaf8);
+  padding:38px 28px 30px;
+  border:2px solid #f4d5df;
+  border-radius:15px;
+  box-shadow:0 12px 35px #80505b20, inset 0 0 0 5px #fff8fa;
+  text-align:left;
+  margin:25px auto;
+  max-width:590px;
+}
+
 .letter.show{display:block;animation:fade .7s ease}
 @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:30px auto}
