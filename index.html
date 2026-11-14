@@ -509,6 +509,33 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
   line-height: 1.5;
   text-align: center;
 }
+  .scrapbook-card::before {
+  content: "🎀";
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  z-index: 6;
+  font-size: 21px;
+  transform: rotate(10deg);
+  filter: drop-shadow(0 3px 3px rgba(150,100,120,0.15));
+}
+
+.scrapbook-card::after {
+  content: "✦";
+  position: absolute;
+  bottom: 7px;
+  left: 9px;
+  color: #e5a8ba;
+  font-size: 14px;
+}
+
+.scrapbook-card:nth-child(3n)::after {
+  content: "♡";
+}
+
+.scrapbook-card:nth-child(4n)::after {
+  content: "✿";
+}
   
 </style></head>
 <body>
