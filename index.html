@@ -183,6 +183,23 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
   color: #e9a0b2;
     }
   
+/* DREAMY WASHI TAPE COLORS */
+
+.scrapbook-card:nth-child(2)::before {
+  background: rgba(255, 220, 170, 0.7);
+  transform: translateX(-50%) rotate(6deg);
+}
+
+.scrapbook-card:nth-child(3)::before {
+  background: rgba(190, 220, 190, 0.7);
+  transform: translateX(-50%) rotate(-7deg);
+}
+
+.scrapbook-card:nth-child(4)::before {
+  background: rgba(205, 190, 235, 0.7);
+  transform: translateX(-50%) rotate(5deg);
+}
+
 </style></head>
 <body>
 <div class="petals">
@@ -265,7 +282,7 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
 
 <section class="closing"><div class="eyebrow">one last thing</div><h2>Keep shining.</h2>
 <p>I hope life surprises you with beautiful things, in ways you never expected. You deserve so much happiness.</p><div style="font-size:30px;color:#c78694;margin-top:20px">♡</div></section>
-<footer>MADE WITH CARE · JUST FOR YOU</footer>
+<footer>MADE WITH LOVE · JUST FOR YOU</footer>
 <script>
 function openLetter(){document.getElementById('envelope').classList.add('open');document.getElementById('letter').classList.add('show')}
 document.getElementById('envelope').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
