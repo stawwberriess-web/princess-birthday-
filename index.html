@@ -478,6 +478,37 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
   font-size: 13px;
   letter-spacing: 2px;
   }
+  .scrapbook-card {
+  background: #fffdfb;
+  padding: 10px 10px 16px;
+  border: 1px solid #ead9d2;
+  border-radius: 4px;
+  box-shadow: 0 8px 18px rgba(170,115,125,0.18);
+}
+
+.scrapbook-card:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+.scrapbook-card:nth-child(3n) {
+  transform: rotate(-1deg);
+}
+
+.scrapbook-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.scrapbook-card figcaption {
+  padding-top: 9px;
+  color: #9b7180;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
   
 </style></head>
 <body>
