@@ -285,6 +285,26 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
     inset 0 0 0 5px rgba(255, 255, 255, 0.55);
 }
   
+/* PEARLS & TINY FLOWERS */
+.song {
+  background-image:
+    radial-gradient(circle, #fff 1.8px, transparent 2.5px),
+    radial-gradient(circle, #f4c5d5 2px, transparent 2.8px);
+  background-size: 22px 22px, 35px 35px;
+  background-position: 0 0, 12px 12px;
+}
+
+.song::after {
+  content: "✿  ♡  ✧  ♡  ✿";
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  color: #d99caf;
+  font-size: 15px;
+  letter-spacing: 4px;
+  pointer-events: none;
+}
+
 </style></head>
 <body>
 <div class="petals">
