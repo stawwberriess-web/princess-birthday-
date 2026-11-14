@@ -39,6 +39,25 @@ p{font-size:16px;line-height:1.9}
 }
 
 .letter.show{display:block;animation:fade .7s ease}
+.letter::before{
+  content:"୨୧";
+  position:absolute;
+  top:8px;
+  left:12px;
+  font-size:32px;
+  color:#e8a1b8;
+  opacity:.8;
+}
+
+  .letter::after{
+  content:"✧ ♡ ✧";
+  position:absolute;
+  bottom:8px;
+  right:14px;
+  font-size:23px;
+  color:#e8a1b8;
+  opacity:.8;
+}
 @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:30px auto}
 .memory{margin:0;background:white;padding:8px 8px 15px;border-radius:10px;box-shadow:0 8px 24px #80505b12}
