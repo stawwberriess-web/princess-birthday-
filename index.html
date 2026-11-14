@@ -37,6 +37,68 @@ p{font-size:16px;line-height:1.9}
 footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:2px;color:#a17c83}
 @media(max-width:520px){.gallery{gap:8px}.memory{padding:6px 6px 12px}.memory img{height:205px}}
 
+/* COQUETTE PINK MUSIC PLAYER */
+.song {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fff8fb, #ffeaf2, #fff5f8);
+  border: 1.5px solid #edc2d1;
+  border-radius: 25px;
+  padding: 32px 22px;
+  box-shadow: 0 12px 30px rgba(205, 135, 160, 0.18);
+}
+
+/* Cute ribbon decorations */
+.song::before {
+  content: "୨୧";
+  position: absolute;
+  top: 8px;
+  right: 17px;
+  color: #dc91aa;
+  font-size: 35px;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+.song::after {
+  content: "♡  ✿  ♡";
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+  color: #e5a5b8;
+  font-size: 15px;
+  letter-spacing: 5px;
+  pointer-events: none;
+}
+
+.song .heart {
+  color: #e58ba8;
+  font-size: 31px;
+  animation: cuteHeartbeat 1.8s ease-in-out infinite;
+  text-shadow: 0 3px 10px #e8a3bb66;
+}
+
+.song p {
+  color: #966575;
+  line-height: 1.8;
+}
+
+.song strong {
+  color: #a85f79;
+  font-size: 18px;
+}
+
+.song .note {
+  color: #bd8799;
+  letter-spacing: 1px;
+}
+
+@keyframes cuteHeartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.13); }
+  }
+  
 /* Dreamy falling flowers */
 .petals {
   position: fixed;
