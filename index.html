@@ -58,6 +58,15 @@ p{font-size:16px;line-height:1.9}
   color:#e8a1b8;
   opacity:.8;
 }
+  .letter-decoration-extra{
+  position:absolute;
+  top:12px;
+  right:15px;
+  font-size:30px;
+  opacity:.85;
+  filter:drop-shadow(0 2px 3px #e8a1b855);
+  pointer-events:none;
+  }
 @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:30px auto}
 .memory{margin:0;background:white;padding:8px 8px 15px;border-radius:10px;box-shadow:0 8px 24px #80505b12}
@@ -520,6 +529,7 @@ footer{text-align:center;padding:25px;font:10px Arial,sans-serif;letter-spacing:
 <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open letter" onclick="openLetter()"><div class="seal">♡</div></div>
 <div class="note">tap the envelope to open your letter</div>
 <article class="letter" id="letter">
+  <span class="letter-decoration-extra">🌸</span>
 <p>Happy Birthday, Princess! 🤍</p>
 
 <p>I hope this new chapter brings you endless happiness, beautiful memories, and countless reasons to smile.</p>
